@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sound Diffusion</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Description">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Network Bending of Diffusion Models for Audio-Visual Generation</h2>
+                <p class="hero_desc">DAFX Conference</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Description">
+        <div class="container">
+            <h1 class="text-center">Description</h1>
+            <p>
+                In this paper we present the first steps towards the creation of a tool which enables artists to create music visualizations using pre-trained, generative, machine learning models. First, we investigate the application of network bending, the process of applying transforms within the layers of a generative network, to image generation diffusion models by utilizing a range of point-wise, tensor-wise, and morphological operators. We identify a number of visual effects that result from various operators, including some that are not easily recreated with standard image editing tools. We find that this process allows for a continuous, fine-grain control of image generation which can be helpful for creative applications. Next, we generate music-reactive videos using Stable Diffusion by passing audio features as parameters to network bending operators. Finally, we comment on certain transforms which radically shift the image and the possibilities of learning more about the latent space of Stable Diffusion based on these transforms.  
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <video class="card-img-top" src="videos/Beethoven_Coriolan_rotate_x_rms_layer0_20fps.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <div class="card-body">
+                            <h4 class="card-title">Img 1</h4>
+                            <p class="card-text">Beethoven with text prompt: "Thunderstorm with lightning". Bending done at layer 0 with RMS.</p>
+                            <div class="text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <video class="card-img-top" src="videos/Beethoven_Coriolan_rotate_x_rms_layer0_20fps1.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <div class="card-body">
+                            <h4 class="card-title">Img 2</h4>
+                            <p class="card-text">Beethoven with text prompt: "Bass". Bending done at layer 0 with RMS.</p>
+                            <div class="text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <video class="card-img-top" src="videos/Beethoven_Coriolan_rotate_x_RMS_layer40_20fps.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <div class="card-body">
+                            <h4 class="card-title">Img 3</h4>
+                            <p class="card-text">Beethoven with text prompt: "Thunderstorm with lightning". Bending done at layer 40 with RMS.</p>
+                            <div class="text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <video class="card-img-top" src="videos/Brahms_4_rotate_x_centroid_layer0_20fps.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <div class="card-body">
+                            <h4 class="card-title">Img 4</h4>
+                            <p class="card-text">Brahms with text prompt: "Bass". Bending done at layer 0 with centroid.</p>
+                            <div class="text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <video class="card-img-top" src="videos/Brahms_4_rotate_x_rms_layer40_20fps_noprompt.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <div class="card-body">
+                            <h4 class="card-title">Img 5</h4>
+                            <p class="card-text">Brahms with no text prompt. Bending done at layer 40 with RMS.</p>
+                            <div class="text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <video class="card-img-top" src="videos/Jarrett_Vienna_cut_rotate_x_centroid_layer40_20fps1.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <div class="card-body">
+                            <h4 class="card-title">Img 6</h4>
+                            <p class="card-text">Jarrett Vienna with text prompt: "Clouds in the sky". Bending done at layer 40 with centroid.</p>
+                            <div class="text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <video class="card-img-top" src="videos/Jarrett_Vienna_mesh_cut_rotate_x_rms_layer40_20fps2.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <div class="card-body">
+                            <h4 class="card-title">Img 7</h4>
+                            <p class="card-text">Jarrett Vienna with text prompt: "3D mesh geometry". Bending done at layer 40 with RMS.</p>
+                            <div class="text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
