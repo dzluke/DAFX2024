@@ -1,15 +1,15 @@
 # Network Bending of Diffusion Models for Audio-Visual Generation
-## Luke Dzwonczyk, Carmine Emanuele Cella, and David Ban
-## DAFx 2024
+### Luke Dzwonczyk, Carmine Emanuele Cella, and David Ban
+### DAFx 2024
 
 In this paper we present the first steps towards the creation of a tool which enables artists to create music visualizations using pre-trained, generative, machine learning models. First, we investigate the application of network bending, the process of applying transforms within the layers of a generative network, to image generation diffusion models by utilizing a range of point-wise, tensor-wise, and morphological operators. We identify a number of visual effects that result from various operators, including some that are not easily recreated with standard image editing tools. We find that this process allows for a continuous, fine-grain control of image generation which can be helpful for creative applications. Next, we generate music-reactive videos using Stable Diffusion by passing audio features as parameters to network bending operators. Finally, we comment on certain transforms which radically shift the image and the possibilities of learning more about the latent space of Stable Diffusion based on these transforms.
 
-# Installation instructions:
+## Installation instructions:
 
-## Dependencies:
+### Dependencies:
 - ffmpeg
 
-## Instructions for M1 Mac
+### Instructions for M1 Mac
 
 The following steps are taken from https://replicate.com/blog/run-stable-diffusion-on-m1-mac
 
@@ -30,7 +30,7 @@ If you're seeing errors like `Failed building wheel for onnx` you might need to 
    - Download `sd-v1-4.ckpt` (~4 GB) on that page. Create a new folder `models/ldm/stable-diffusion-v1` and save the
    model you downloaded as `models/ldm/stable-diffusion-v1/model.ckpt`
 
-## For Windows users
+### For Windows users
 
 1. Follow instructions for mac until part 3.
 2. Set up virtual environment:
@@ -45,7 +45,7 @@ python -m venv venv
 
 5. Continue following instructions for mac starting at 5.
 
-# Running the code:
+## Running the code:
 
 `imgen.py`: for generating images with different prompts and network bending functions
 
