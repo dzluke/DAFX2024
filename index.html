@@ -27,7 +27,7 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Description">Description</a>
+                        <a class="nav-link" href="#Description">Abstract</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#video">Videos</a>
@@ -45,7 +45,10 @@
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
                 <h2 class="hero_title">Network Bending of Diffusion Models for Audio-Visual Generation</h2>
-                <p class="hero_desc">DAFX Conference</p>
+                <p class="hero_desc">
+                    Luke Dzwonczyk, Carmine Emanuele Cella, and David Ban <br>
+                    DAFx 2024
+                </p>
             </div>
             </div>
         </div>
@@ -53,7 +56,7 @@
 
     <section id="Description">
         <div class="container">
-            <h1 class="text-center">Description</h1>
+            <h1 class="text-center">Abstract</h1>
             <p>
                 In this paper we present the first steps towards the creation of a tool which enables artists to create music visualizations using pre-trained, generative, machine learning models. First, we investigate the application of network bending, the process of applying transforms within the layers of a generative network, to image generation diffusion models by utilizing a range of point-wise, tensor-wise, and morphological operators. We identify a number of visual effects that result from various operators, including some that are not easily recreated with standard image editing tools. We find that this process allows for a continuous, fine-grain control of image generation which can be helpful for creative applications. Next, we generate music-reactive videos using Stable Diffusion by passing audio features as parameters to network bending operators. Finally, we comment on certain transforms which radically shift the image and the possibilities of learning more about the latent space of Stable Diffusion based on these transforms.  
             </p>
@@ -70,8 +73,14 @@
                     <div class="card">
                         <video class="card-img-top" src="videos/Beethoven_Coriolan_rotate_x_rms_layer0_20fps.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
                         <div class="card-body">
-                            <h4 class="card-title">Video 1</h4>
-                            <p class="card-text">Beethoven with text prompt: "Thunderstorm with lightning". Bending done at layer 0 with RMS.</p>
+<!--                            <h4 class="card-title">Video 1</h4>-->
+                            <p class="card-text">
+                                <b>audio:</b> opening of Beethoven's Coriolan Overture <br>
+                                <b>prompt:</b> "Thunderstorm with lightning" <br>
+                                <b>operator:</b> rotate R<sub>1</sub>;
+                                <b>feature:</b> RMS <br>
+                                <b>layer:</b> 0
+                            </p>
                             <div class="text-center">
                             </div>
                         </div>
@@ -82,8 +91,14 @@
                     <div class="card portfolioContent">
                         <video class="card-img-top" src="videos/Beethoven_Coriolan_rotate_x_rms_layer0_20fps1.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
                         <div class="card-body">
-                            <h4 class="card-title">Video 2</h4>
-                            <p class="card-text">Beethoven with text prompt: "Bass". Bending done at layer 0 with RMS.</p>
+<!--                            <h4 class="card-title">Video 2</h4>-->
+                            <p class="card-text">
+                                <b>audio:</b> opening of Beethoven's Coriolan Overture <br>
+                                <b>prompt:</b> "Bass" <br>
+                                <b>operator:</b> rotate R<sub>1</sub>;
+                                <b>feature:</b> RMS <br>
+                                <b>layer:</b> 0
+                            </p>
                             <div class="text-center">
                             </div>
                         </div>
@@ -94,8 +109,14 @@
                     <div class="card portfolioContent">
                         <video class="card-img-top" src="videos/Beethoven_Coriolan_rotate_x_RMS_layer40_20fps.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
                         <div class="card-body">
-                            <h4 class="card-title">Video 3</h4>
-                            <p class="card-text">Beethoven with text prompt: "Thunderstorm with lightning". Bending done at layer 40 with RMS.</p>
+<!--                            <h4 class="card-title">Video 3</h4>-->
+                            <p class="card-text">
+                                <b>audio:</b> opening of Beethoven's Coriolan Overture <br>
+                                <b>prompt:</b> "Thunderstorm with lightning" <br>
+                                <b>operator:</b> rotate R<sub>1</sub>;
+                                <b>feature:</b> RMS <br>
+                                <b>layer:</b> 40
+                            </p>
                             <div class="text-center">
                             </div>
                         </div>
@@ -106,10 +127,16 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <video class="card-img-top" src="videos/Brahms_4_rotate_x_centroid_layer0_20fps.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <video class="card-img-top" src="videos/Jarrett_mesh_rotate_x_rms_layer40_20fps.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
                         <div class="card-body">
-                            <h4 class="card-title">Video 4</h4>
-                            <p class="card-text">Brahms with text prompt: "Bass". Bending done at layer 0 with centroid.</p>
+<!--                            <h4 class="card-title">Video 4</h4>-->
+                            <p class="card-text">
+                                <b>audio:</b> solo piano <br>
+                                <b>prompt:</b> "3D mesh geometry" <br>
+                                <b>operator:</b> rotate R<sub>1</sub>;
+                                <b>feature:</b> RMS <br>
+                                <b>layer:</b> 40
+                            </p>
                             <div class="text-center">
                             </div>
                         </div>
@@ -118,10 +145,16 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <video class="card-img-top" src="videos/Brahms_4_rotate_x_rms_layer40_20fps_noprompt.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <video class="card-img-top" src="videos/Jarrett_mesh_rotate_x_flux_layer40_20fps.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
                         <div class="card-body">
-                            <h4 class="card-title">Video 5</h4>
-                            <p class="card-text">Brahms with no text prompt. Bending done at layer 40 with RMS.</p>
+<!--                            <h4 class="card-title">Video 5</h4>-->
+                            <p class="card-text">
+                                <b>audio:</b> solo piano <br>
+                                <b>prompt:</b> "3D mesh geometry" <br>
+                                <b>operator:</b> rotate R<sub>1</sub>;
+                                <b>feature:</b> spectral flux <br>
+                                <b>layer:</b> 40
+                            </p>
                             <div class="text-center">
                             </div>
                         </div>
@@ -130,10 +163,16 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card portfolioContent">
-                        <video class="card-img-top" src="videos/Jarrett_Vienna_cut_rotate_x_centroid_layer40_20fps1.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
+                        <video class="card-img-top" src="videos/Brahms_4_rotate_x_rms_layer40_20fps_2prompts.mp4" alt="Card image" style="width:100%" type="video/mp4" controls></video>
                         <div class="card-body">
-                            <h4 class="card-title">Video 6</h4>
-                            <p class="card-text">Jarrett Vienna with text prompt: "Clouds in the sky". Bending done at layer 40 with centroid.</p>
+<!--                            <h4 class="card-title">Video 6</h4>-->
+                            <p class="card-text">
+                                <b>audio:</b> opening of Beethoven's Coriolan Overture <br>
+                                <b>prompt:</b> begins with "starry night" and ends with "forest with river" <br>
+                                <b>operator:</b> rotate R<sub>1</sub>;
+                                <b>feature:</b> RMS <br>
+                                <b>layer:</b> 40
+                            </p>
                             <div class="text-center">
                             </div>
                         </div>
@@ -153,8 +192,10 @@
             <div class="col-lg-12 mt-4">
                 <image class="card-img-top" src="images/inversion.png" alt="Card image" style="width:100%"></image>
                 <div class="card-body">
-                    <h4 class="card-title">Image 1</h4>
-                    <p class="card-text">Adding values to the first dimension of each tensor at a specific layer.</p>
+                    <h4 class="card-title">Inversion</h4>
+                    <p class="card-text">
+                        Applying inversion at different layers with changing <i>r</i> to the prompt "a floating orb". <br>
+                        Each row is for a different value of <i>r</i>.</p>
                     <div class="text-center">
                     </div>
                 </div>
@@ -165,8 +206,10 @@
             <div class="col-lg-12 mt-4">
                 <image class="card-img-top" src="images/dilation4_normalize4_orb .png" alt="Card image" style="width:100%"></image>
                 <div class="card-body">
-                    <h4 class="card-title">Image 1</h4>
-                    <p class="card-text">Adding values to the first dimension of each tensor at a specific layer.</p>
+                    <h4 class="card-title">Dilation with normalization</h4>
+                    <p class="card-text">
+                        Applying dilation with normalization at different layers to the prompt "a floating orb". <br>
+                        Each column shows normalization happening across a different dimension. </p>
                     <div class="text-center">
                     </div>
                 </div>
@@ -177,8 +220,11 @@
             <div class="col-lg-12 mt-4">
                 <image class="card-img-top" src="images/erosion4_normalize4_orb.png" alt="Card image" style="width:100%"></image>
                 <div class="card-body">
-                    <h4 class="card-title">Image 1</h4>
-                    <p class="card-text">Adding values to the first dimension of each tensor at a specific layer.</p>
+                    <h4 class="card-title">Erosion with normalization</h4>
+                    <p class="card-text">
+                        Applying erosion with normalization at different layers to the prompt "a floating orb". <br>
+                        Each column shows normalization happening across a different dimension. </p>
+                    </p>
                     <div class="text-center">
                     </div>
                 </div>
@@ -191,73 +237,8 @@
                 <div class="card">
                     <image class="card-img-top" src="images/add_dim1.png" alt="Card image" style="width:100%"></image>
                     <div class="card-body">
-                        <h4 class="card-title">Image 1</h4>
-                        <p class="card-text">Adding values to the first dimension of each tensor at a specific layer.</p>
-                        <div class="text-center">
-                        </div>
-                    </div>
-                </div>
-            </div>>
-        </div>
-
-
-        <div class="row">
-            <div class="col-lg-6 mt-4">
-                <div class="card portfolioContent">
-                    <image class="card-img-top" src="images/rotate_x_crane.png" alt="Card image" style="width:100%"></image>
-                    <div class="card-body">
-                        <h4 class="card-title">Image 5</h4>
-                        <p class="card-text">Rotating tensors around the x-axis at a given angle at a specific layer with the text input of "crane".</p>
-                        <div class="text-center">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mt-4">
-                <div class="card portfolioContent">
-                    <image class="card-img-top" src="images/rotate_x_orb.png" alt="Card image" style="width:100%"></image>
-                    <div class="card-body">
-                        <h4 class="card-title">Image 6</h4>
-                        <p class="card-text">Rotating tensors around the x-axis at a given angle at a specific layer with the text input of "a floating orb".</p>
-                        <div class="text-center">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6 mt-4">
-                <div class="card portfolioContent">
-                    <image class="card-img-top" src="images/rotate_y_orb.png" alt="Card image" style="width:100%"></image>
-                    <div class="card-body">
-                        <h4 class="card-title">Image 7</h4>
-                        <p class="card-text">Rotating tensors around the y-axis at a given angle at a specific layer with the text input of "a floating orb".</p>
-                        <div class="text-center">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mt-4">
-                <div class="card portfolioContent">
-                    <image class="card-img-top" src="images/rotate_y2_orb.png" alt="Card image" style="width:100%"></image>
-                    <div class="card-body">
-                        <h4 class="card-title">Image 8</h4>
-                        <p class="card-text">Rotating tensors around the y-axis at a given angle at a specific layer with the text input of "a floating orb".</p>
-                        <div class="text-center">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6 mt-4">
-                <div class="card portfolioContent">
-                    <image class="card-img-top" src="images/rotate_z_orb.png" alt="Card image" style="width:100%"></image>
-                    <div class="card-body">
-                        <h4 class="card-title">Image 9</h4>
-                        <p class="card-text">Rotating tensors around the z-axis at a given angle at a specific layer with the text input of "a floating orb".</p>
+                        <h4 class="card-title">Addition of scalar to single dimension</h4>
+                        <p class="card-text">Adding scalar <i>r</i> to only first dimension of the latent tensor with prompt "a floating orb"</p>
                         <div class="text-center">
                         </div>
                     </div>
@@ -267,13 +248,89 @@
                 <div class="card portfolioContent">
                     <image class="card-img-top" src="images/threshold3.png" alt="Card image" style="width:100%"></image>
                     <div class="card-body">
-                        <h4 class="card-title">Image 10</h4>
-                        <p class="card-text">Thresholding tensors at a specific layer with a given minimum.</p>
+                        <h4 class="card-title">Hard threshold</h4>
+                        <p class="card-text">Applying thresholding at different with changing <i>r</i> to the prompt "a floating orb"</p>
                         <div class="text-center">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-6 mt-4">
+                <div class="card portfolioContent">
+                    <image class="card-img-top" src="images/rotate_x_orb.png" alt="Card image" style="width:100%"></image>
+                    <div class="card-body">
+                        <h4 class="card-title">Rotation by R<sub>1</sub></h4>
+                        <p class="card-text">
+                            Applying rotation by R<sub>1</sub> at different layers with changing angle to the prompt "a floating orb"
+                        </p>
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="card portfolioContent">
+                    <image class="card-img-top" src="images/rotate_y_orb.png" alt="Card image" style="width:100%"></image>
+                    <div class="card-body">
+                        <h4 class="card-title">Rotation by R<sub>2</sub></h4>
+                        <p class="card-text">
+                            Applying rotation by R<sub>2</sub> at different layers with changing angle to the prompt "a floating orb"
+                        </p>
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 mt-4">
+                <div class="card portfolioContent">
+                    <image class="card-img-top" src="images/rotate_y2_orb.png" alt="Card image" style="width:100%"></image>
+                    <div class="card-body">
+                        <h4 class="card-title">Rotation by R<sub>3</sub></h4>
+                        <p class="card-text">
+                            Applying rotation by R<sub>3</sub> at different layers with changing angle to the prompt "a floating orb"
+                        </p>
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="card portfolioContent">
+                    <image class="card-img-top" src="images/rotate_z_orb.png" alt="Card image" style="width:100%"></image>
+                    <div class="card-body">
+                        <h4 class="card-title">Rotation by R<sub>4</sub></h4>
+                        <p class="card-text">
+                            Applying rotation by R<sub>4</sub> at different layers with changing angle to the prompt "a floating orb"
+                        </p>
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 mt-4">
+                <div class="card portfolioContent">
+                    <image class="card-img-top" src="images/rotate_x_crane.png" alt="Card image" style="width:100%"></image>
+                    <div class="card-body">
+                        <h4 class="card-title">Semantic shift</h4>
+                        <p class="card-text">
+                            Applying rotation by R<sub>1</sub> at different layers with changing angle to the prompt "crane"
+                        </p>
+                        <div class="text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
